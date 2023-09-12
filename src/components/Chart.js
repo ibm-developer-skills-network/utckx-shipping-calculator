@@ -1,24 +1,25 @@
 import React from 'react';
-import '../styles.css'; // Import the styles.css file
 
-const Chart = ({ freightRates, currency }) => {
+const Chart = ({ freightRates, packageWeightUnit }) => {
   return (
-    <div className="chart-container"> {/* Add the class name for container */}
+    <div className="chart-container">
       <h2>Shipping Rate Chart</h2>
       <table>
         <thead>
           <tr>
             <th>Package Weight</th>
-            <th>Destination</th>
-            <th>Shipping Rate</th>
+            {/* Create a table column for Destination */}
+
+            {/* Create a table column for Shipping Rate */}
+            
           </tr>
         </thead>
         <tbody>
           {freightRates.map((rate, index) => (
             <tr key={index}>
-              <td>{rate.packageSize}</td>
-              <td>{rate.destination}</td>
-              <td>{currency === 'usd' ? `$${rate.rate.toFixed(2)}` : `₹${rate.rate.toFixed(2)}`}</td>
+              <td>{/* Complete: Display the package size and weight unit here */}</td>
+              <td>{/* Complete: Display the destination here */}</td>
+              <td>{/* Complete: Display the shipping rate here */}</td>
             </tr>
           ))}
         </tbody>
