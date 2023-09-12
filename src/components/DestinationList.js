@@ -9,10 +9,10 @@ Object.keys(IndiaCities).forEach((country) => {
   });
 });
 
+
+
 Object.keys(USCities).forEach((country) => {
-  USCities[country].forEach((city) => {
-    cityOptions.push({ value: `${city}, ${country}`, label: `${city}, ${country}` });
-  });
+  //Complete the code for the USCities
 });
 
 export default cityOptions;
